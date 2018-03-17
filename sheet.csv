@@ -1,0 +1,166 @@
+id,key,action
+1,Ctrl+X, Cut line (empty selection)
+2,Ctrl+C, Copy line (empty selection)
+3,Ctrl+Shift+K, Delete Line
+4,Ctrl+Enter, Insert Line Below
+5,Ctrl+Shift+Enter, Insert Line Above
+6,Alt+Down, Move Line Down
+7,Alt+Up, Move Line Up
+8,Shift+Alt+Down, Copy Line Down
+9,Shift+Alt+Up, Copy Line Up
+10,Ctrl+D, Add Selection To Next Find Match
+11,Ctrl+K Ctrl+D, Move Last Selection To Next Find Match
+12,Ctrl+U, Undo last cursor operation
+13,Shift+Alt+I, Insert cursor at end of each line selected
+14,Ctrl+Shift+L, Select all occurrences of current selection
+15,Ctrl+F2, Select all occurrences of current word
+16,Ctrl+I, Select current line
+17,Ctrl+Alt+Down, Insert Cursor Below
+18,Ctrl+Alt+Up, Insert Cursor Above
+19,Ctrl+Shift+\, Jump to matching bracket
+20,Ctrl+], Indent Line
+21,Ctrl+[, Outdent Line
+22,Home, Go to Beginning of Line
+23,End, Go to End of Line
+24,Ctrl+End, Go to End of File
+25,Ctrl+Home, Go to Beginning of File
+26,Ctrl+Down, Scroll Line Down
+27,Ctrl+Up, Scroll Line Up
+28,Alt+PageDown, Scroll Page Down
+29,Alt+PageUp, Scroll Page Up
+30,Ctrl+Shift+[, Fold (collapse) region
+31,Ctrl+Shift+], Unfold (uncollapse) region
+32,Ctrl+K Ctrl+[, Fold (collapse) all subregions
+33,Ctrl+K Ctrl+], Unfold (uncollapse) all subregions
+34,Ctrl+K Ctrl+0, Fold (collapse) all regions
+35,Ctrl+K Ctrl+J, Unfold (uncollapse) all regions
+36,Ctrl+K Ctrl+C, Add Line Comment
+37,Ctrl+K Ctrl+U, Remove Line Comment
+38,Ctrl+/, Toggle Line Comment
+39,Shift+Alt+A, Toggle Block Comment
+40,Ctrl+F, Find
+41,Ctrl+H, Replace
+42,F3, Find Next
+43,Shift+F3, Find Previous
+44,Alt+Enter, Select All Occurrences of Find Match
+45,Alt+C, Toggle Find Case Sensitive
+46,Alt+R, Toggle Find Regex
+47,Alt+W, Toggle Find Whole Word
+48,Ctrl+M, Toggle Use of Tab Key for Setting Focus
+49,unassigned, Toggle Render Whitespace
+50,Alt+Z, Toggle Word Wrap
+51,Ctrl+Space, Trigger Suggest
+52,Ctrl+Shift+Space, Trigger Parameter Hints
+53,Shift+Alt+F, Format Document
+54,Ctrl+K Ctrl+F, Format Selection
+55,F12, Go to Definition
+56,Ctrl+K Ctrl+I, Show Hover
+57,Alt+F12, Peek Definition
+58,Ctrl+K F12, Open Definition to the Side
+59,Ctrl+., Quick Fix
+60,Shift+F12, Show References
+61,F2, Rename Symbol
+62,Ctrl+Shift+., Replace with Next Value
+64,Shift+Alt+Right, Expand AST Select
+65,Shift+Alt+Left, Shrink AST Select
+66,Ctrl+K Ctrl+X, Trim Trailing Whitespace
+67,Ctrl+K M, Change Language Mode
+68,Ctrl+T, Show All Symbols
+69,Ctrl+G, Go to Line...
+70,Ctrl+P, Go to File...
+71,Ctrl+Shift+O, Go to Symbol...
+72,Ctrl+Shift+M, Show Problems
+73,F8, Go to Next Error or Warning
+74,Shift+F8, Go to Previous Error or Warning
+75,Ctrl+Shift+P, Show All Commands
+76,Ctrl+Shift+Tab, Navigate Editor Group History
+77,Alt+Left, Go Back
+78,Alt+Right, Go Forward
+79,Ctrl+Shift+N, New Window
+80,Ctrl+Shift+W, Close Window
+81,Ctrl+F4, Close Editor
+82,Ctrl+K F, Close Folder
+83,unassigned, Cycle Between Editor Groups
+84,Ctrl+\, Split Editor
+85,Ctrl+1, Focus into First Editor Group
+86,Ctrl+2, Focus into Second Editor Group
+87,Ctrl+3, Focus into Third Editor Group
+88,Ctrl+K Ctrl+Left, Focus into Editor Group on the Left
+89,Ctrl+K Ctrl+Right, Focus into Editor Group on the Right
+90,Ctrl+Shift+PageUp, Move Editor Left
+91,Ctrl+Shift+PageDown, Move Editor Right
+92,Ctrl+K Left, Move Active Editor Group Left
+93,Ctrl+K Right, Move Active Editor Group Right
+94,Ctrl+Alt+Right, Move Editor into Next Group
+95,Ctrl+Alt+Left, Move Editor into Previous Group
+96,Ctrl+N, New File
+97,Ctrl+O, Open File...
+98,Ctrl+S, Save
+99,Ctrl+K S, Save All
+100,Ctrl+Shift+S, Save As...
+101,Ctrl+F4, Close
+102,unassigned, Close Others
+103,Ctrl+K W, Close Group
+104,unassigned, Close Other Groups
+105,unassigned, Close Group to Left
+106,unassigned, Close Group to Right
+107,Ctrl+K Ctrl+W, Close All
+108,Ctrl+Shift+T, Reopen Closed Editor
+109,Ctrl+K Enter, Keep Open
+110,Ctrl+Tab, Open Next
+111,Ctrl+Shift+Tab, Open Previous
+112,Ctrl+K P, Copy Path of Active File
+113,Ctrl+K R, Reveal Active File in Windows
+114,Ctrl+K O, Show Opened File in New Window
+115,unassigned, Compare Opened File With
+116,F11, Toggle Full Screen
+117,Ctrl+K Z, Toggle Zen Mode
+118,Escape Escape, Leave Zen Mode
+119,Ctrl+=, Zoom in
+120,Ctrl+-, Zoom out
+121,Ctrl+Numpad0, Reset Zoom
+122,Ctrl+B, Toggle Sidebar Visibility
+123,Ctrl+Shift+E, Show Explorer / Toggle Focus
+124,Ctrl+Shift+F, Show Search
+125,Ctrl+Shift+G, Show Source Control
+126,Ctrl+Shift+D, Show Debug
+127,Ctrl+Shift+X, Show Extensions
+128,Ctrl+Shift+U, Show Output
+129,Ctrl+Q, Quick Open View
+130,Ctrl+Shift+C, Open New Command Prompt
+131,Ctrl+Shift+V, Toggle Markdown Preview
+132,Ctrl+K V, Open Preview to the Side
+133,Ctrl+`, Toggle Integrated Terminal
+134,Ctrl+Shift+F, Show Search
+135,Ctrl+Shift+H, Replace in Files
+136,Alt+C, Toggle Match Case
+137,Alt+W, Toggle Match Whole Word
+138,Alt+R, Toggle Use Regular Expression
+139,Ctrl+Shift+J, Toggle Search Details
+140,F4, Focus Next Search Result
+141,Shift+F4, Focus Previous Search Result
+142,Alt+Down, Show Next Search Term
+143,Alt+Up, Show Previous Search Term
+145,unassigned, Open Workspace Settings
+146,Ctrl+K Ctrl+S, Open Keyboard Shortcuts
+147,unassigned, Open User Snippets
+148,Ctrl+K Ctrl+T, Select Color Theme
+149,unassigned, Configure Display Language
+150,F9, Toggle Breakpoint
+151,F5, Start
+152,F5, Continue
+153,Ctrl+F5, Start (without debugging)
+154,F6, Pause
+155,F11, Step Into
+156,Shift+F11, Step Out
+157,F10, Step Over
+158,Shift+F5, Stop
+159,Ctrl+K Ctrl+I, Show Hover
+160,Ctrl+Shift+B, Run Build Task
+161,unassigned, Run Test Task
+162,unassigned, Install Extension
+163,unassigned, Show Installed Extensions
+164,unassigned, Show Outdated Extensions
+165,unassigned, Show Recommended Extensions
+166,unassigned, Show Popular Extensions
+167,unassigned, Update All Extensions
