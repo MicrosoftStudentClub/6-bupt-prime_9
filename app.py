@@ -20,12 +20,12 @@ def main():
     conn = sq3.connect('sheets.db')
     c = conn.cursor()
     table = list(c.execute('select action, key from vscode'))
-    action = process.extractOne(action, table[:][0])[0]
+    action = process.extractOne(action, [l[0] for l in table])[0]
     for row in table:
         if row[0] == action:
             res = row[1]
             break
-    res = '{"data":"' + 'The key for action ' + action + ' is ' + res + '"}'
+    res = '{"data":"' + 'The key for action' + action + ' is ' + res + '"}'
     return res
 
 if __name__ == '__main__':
