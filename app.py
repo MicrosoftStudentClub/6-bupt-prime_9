@@ -13,6 +13,9 @@ def main():
     software = request.form.get('software', 'none')
     if software in vscode:
         software = vscode[0]
+    else:
+        res = '{"data":"' + 'The software is not in out list. Please try another name or give up.' + '"}'
+        return res
     
     conn = sq3.connect('sheets.db')
     c = conn.cursor()
@@ -22,7 +25,7 @@ def main():
         if row[0] == action:
             res = row[1]
             break
-    res = '{"data":"' + res + '"}'
+    res = '{"data":"' + 'The key for action ' + action + ' is ' + res + '"}'
     return res
 
 if __name__ == '__main__':
