@@ -1,0 +1,48 @@
+SET app_id = "2beb2e48-e143-41c1-b6e9-6d8e55cb3a7e"
+SET api_key = "55805f0fe3ad45debf2e05d87812a815"
+
+SAY "Hello, this is cheatsheet handbook"
+
+begin:
+SAY "What do you want to ask?"
+GET_INPUT
+SET query = USER_INPUT
+
+SET lu_request = create("$system.lu_request", method = "Luis", appid = app_id, key = api_key, utterance = query)
+CALL "system.languageunderstanding", "generic", config = lu_request
+SET lu_response = CALL_RESULT.lu
+SET res = dict([(i.name, i.value) for i in lu_response.intents[0].entities])
+
+
+IF "action" not in res and "software" not in res
+    SAY "I don't understand, please try again."
+    GO begin
+IF "action" not in res
+    GO ask_action
+ELSE
+    SET action = res["action"]
+action_got:
+IF "software" not in res
+    GO ask_software
+ELSE
+    SET software = res["software"]
+software_got:
+GO return
+
+ask_action:
+SAY "Sorry, Please tell me what you want to do."
+GET_INPUT
+SET action = USER_INPUT
+GO action_got
+
+ask_software:
+SAY "Sorry, Please directly tell me which software you are using."
+GET_INPUT
+SET software = USER_INPUT
+GO software_got
+
+
+
+return:
+CALL "sine_test.service_test", "query_key", action=action, software=software STORE out
+SAY out.data
